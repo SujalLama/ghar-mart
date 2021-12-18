@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+   QueryClient,
+   QueryClientProvider,
+ } from 'react-query'
+
+ // Create a client
+ const queryClient = new QueryClient({
+   defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false
+    }
+  }})
 
 ReactDOM.render(
-  <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
     <App />
-  </React.StrictMode>,
+  </QueryClientProvider>,
   document.getElementById('root')
 );
 

@@ -1,0 +1,25 @@
+.property-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.property-sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.property-sub-header input {
+    flex: 0.4;
+}
+
+@media only screen and (max-width: 767px) {
+    .property-sub-header input {
+        margin-top: 18px;
+    }
+
+    .property-sub-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
