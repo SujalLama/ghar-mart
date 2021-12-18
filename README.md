@@ -18,7 +18,7 @@ This application uses postgres, node, express and react stack. Features in this 
     -   cd backend and npm install 
     -   create .env file
     -   Fill details as instructed in .env.example file
-    -   To run migration and seed, open cofig/config.json file
+    -   To run migration and seed, open config/config.json file
         - put your database name and password
         - then, type 
             -   npm run migrate 
